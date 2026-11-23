@@ -1,0 +1,393 @@
+<!-- DEVELOPER: Aidan Heaney, IS117, Fall 2026 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About the System — NLR History</title>
+  <meta name="description" content="Current operational overview, station directory, system map, rolling stock, and commuter connections of the modern Newark Light Rail.">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <div class="disclaimer-bar" role="note" aria-label="Affiliation Disclaimer">
+    <div class="container d-flex flex-wrap justify-content-between align-items-center">
+      <div>
+        <span class="disclaimer-badge">Independent Archive</span>
+        <span>Not affiliated with, endorsed by, or operated by NJ Transit or Public Service.</span>
+      </div>
+      <div class="disclaimer-meta">NLR History Project · Newark, NJ</div>
+    </div>
+  </div>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom sticky-top" aria-label="Main navigation">
+    <div class="container">
+      <a class="navbar-brand d-flex flex-column" href="index.html">
+        <span class="brand-title">NLR History</span>
+        <span class="brand-tagline">The Line That Outlasted Time</span>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="historyDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              History
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="historyDropdown">
+              <li><a class="dropdown-item" href="history.html">History Hub &amp; Timeline</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="era-1-canal.html">Era 1: Morris Canal (1824–1927)</a></li>
+              <li><a class="dropdown-item" href="era-2-trolleys.html">Era 2: Trolleys &amp; #7 Subway (1916–1954)</a></li>
+              <li><a class="dropdown-item" href="era-3-pcc-cars.html">Era 3: PCC Cars (1954–2001)</a></li>
+              <li><a class="dropdown-item" href="era-4-modern-light-rail.html">Era 4: Modern Light Rail (2001–Present)</a></li>
+              <li><a class="dropdown-item" href="future.html">The Future: Proposed Extensions</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="about.html" aria-current="page">About the System</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="contactDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Contact
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="contactDropdown">
+              <li><a class="dropdown-item" href="contact.html">Contact &amp; Archive Submissions</a></li>
+              <li><a class="dropdown-item" href="advocate.html">Advocate for Transit Expansion</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <nav class="breadcrumb-bar" aria-label="Breadcrumb">
+    <div class="container">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">About the System</li>
+      </ol>
+    </div>
+  </nav>
+
+  <main id="main-content">
+    <section class="page-banner">
+      <div class="container">
+        <p class="eyebrow">Operations &amp; Network Reference</p>
+        <h1>About the Newark Light Rail System</h1>
+        <p class="page-lead">
+          The Newark Light Rail operates across two main segments connecting major transit hubs, commercial districts, and local university campuses. This guide outlines the current system footprint, station directory, rolling stock, and daily operational profile.
+        </p>
+      </div>
+    </section>
+
+    <section class="py-5">
+      <div class="container">
+        <div class="stat-strip" aria-label="Current Operational Profile">
+          <div class="stat-cell">
+            <span class="stat-value">6.2 mi</span>
+            <span class="stat-label">Total Track Network (10.0 km)</span>
+          </div>
+          <div class="stat-cell">
+            <span class="stat-value">17</span>
+            <span class="stat-label">Total Light Rail Stations</span>
+          </div>
+          <div class="stat-cell">
+            <span class="stat-value">2</span>
+            <span class="stat-label">Branches from Newark Penn</span>
+          </div>
+          <div class="stat-cell">
+            <span class="stat-value">21 LRVs</span>
+            <span class="stat-label">Kinki Sharyo Low-Floor Fleet</span>
+          </div>
+        </div>
+
+        <div class="diagram-card">
+          <svg viewBox="0 0 980 210" width="100%" role="img" aria-label="Linear schematic diagram of the Grove Street and Broad Street branches of the Newark Light Rail">
+            <rect x="0" y="0" width="980" height="210" fill="#f8f9fa" />
+            <text x="20" y="24" fill="#212529" font-family="monospace" font-size="11" font-weight="bold">ACTIVE SYSTEM TOPOLOGY · BOTH BRANCHES ORIGINATE AT NEWARK PENN STATION</text>
+
+            <!-- Grove Street Branch Line -->
+            <line x1="65" y1="75" x2="912" y2="75" stroke="#212529" stroke-width="6" />
+            <text x="65" y="50" fill="#212529" font-family="Georgia, serif" font-size="13" font-weight="bold">Grove Street Branch (~5.3 mi · Historic City Subway Line)</text>
+
+            <!-- Broad Street Branch Line -->
+            <line x1="65" y1="75" x2="120" y2="155" stroke="#495057" stroke-width="5" />
+            <line x1="120" y1="155" x2="560" y2="155" stroke="#495057" stroke-width="5" />
+            <text x="140" y="190" fill="#495057" font-family="Georgia, serif" font-size="13" font-weight="bold">Broad Street Branch (~1.0 mi · Broad Street Extension)</text>
+
+            <!-- Grove St Branch Stops (12 incl. Newark Penn) -->
+            <circle cx="65" cy="75" r="9" fill="#495057" stroke="#FFFFFF" stroke-width="2" />
+            <text x="65" y="102" text-anchor="middle" fill="#1C2127" font-family="sans-serif" font-size="9.5" font-weight="bold">Newark Penn</text>
+
+            <circle cx="142" cy="75" r="5" fill="#FFFFFF" stroke="#212529" stroke-width="2" />
+            <text x="142" y="100" text-anchor="middle" fill="#1C2127" font-family="sans-serif" font-size="9">Military Pk</text>
+
+            <circle cx="219" cy="75" r="5" fill="#FFFFFF" stroke="#212529" stroke-width="2" />
+            <text x="219" y="100" text-anchor="middle" fill="#1C2127" font-family="sans-serif" font-size="9">Washington</text>
+
+            <circle cx="296" cy="75" r="5" fill="#FFFFFF" stroke="#212529" stroke-width="2" />
+            <text x="296" y="100" text-anchor="middle" fill="#1C2127" font-family="sans-serif" font-size="9">Warren St</text>
+
+            <circle cx="373" cy="75" r="5" fill="#FFFFFF" stroke="#212529" stroke-width="2" />
+            <text x="373" y="100" text-anchor="middle" fill="#1C2127" font-family="sans-serif" font-size="9">Norfolk St</text>
+
+            <circle cx="450" cy="75" r="5" fill="#FFFFFF" stroke="#212529" stroke-width="2" />
+            <text x="450" y="100" text-anchor="middle" fill="#1C2127" font-family="sans-serif" font-size="9">Orange St</text>
+
+            <circle cx="527" cy="75" r="5" fill="#FFFFFF" stroke="#212529" stroke-width="2" />
+            <text x="527" y="100" text-anchor="middle" fill="#1C2127" font-family="sans-serif" font-size="9">Park Ave</text>
+
+            <circle cx="604" cy="75" r="5" fill="#FFFFFF" stroke="#212529" stroke-width="2" />
+            <text x="604" y="100" text-anchor="middle" fill="#1C2127" font-family="sans-serif" font-size="9">Bloomfield</text>
+
+            <circle cx="681" cy="75" r="5" fill="#FFFFFF" stroke="#212529" stroke-width="2" />
+            <text x="681" y="100" text-anchor="middle" fill="#1C2127" font-family="sans-serif" font-size="9">Davenport</text>
+
+            <circle cx="758" cy="75" r="5" fill="#FFFFFF" stroke="#212529" stroke-width="2" />
+            <text x="758" y="100" text-anchor="middle" fill="#1C2127" font-family="sans-serif" font-size="9">Branch Brook</text>
+
+            <circle cx="835" cy="75" r="5" fill="#FFFFFF" stroke="#212529" stroke-width="2" />
+            <text x="835" y="100" text-anchor="middle" fill="#1C2127" font-family="sans-serif" font-size="9">Silver Lake</text>
+
+            <circle cx="912" cy="75" r="8" fill="#212529" stroke="#FFFFFF" stroke-width="2" />
+            <text x="912" y="100" text-anchor="middle" fill="#212529" font-family="sans-serif" font-size="9.5" font-weight="bold">Grove St</text>
+
+            <!-- Broad St Extension Stops -->
+            <circle cx="205" cy="155" r="5" fill="#FFFFFF" stroke="#495057" stroke-width="2" />
+            <text x="205" y="140" text-anchor="middle" fill="#1C2127" font-family="sans-serif" font-size="9.5">NJPAC/Center</text>
+
+            <circle cx="305" cy="155" r="5" fill="#FFFFFF" stroke="#495057" stroke-width="2" />
+            <text x="305" y="140" text-anchor="middle" fill="#1C2127" font-family="sans-serif" font-size="9.5">Atlantic (Out)</text>
+
+            <circle cx="420" cy="155" r="5" fill="#FFFFFF" stroke="#495057" stroke-width="2" />
+            <text x="420" y="140" text-anchor="middle" fill="#1C2127" font-family="sans-serif" font-size="9.5">Riverfront / Harriet Tubman Sq</text>
+
+            <circle cx="560" cy="155" r="8" fill="#495057" stroke="#FFFFFF" stroke-width="2" />
+            <text x="560" y="140" text-anchor="middle" fill="#495057" font-family="sans-serif" font-size="10" font-weight="bold">Newark Broad St</text>
+          </svg>
+          <p class="diagram-caption">
+            Schematic line overview. For official real-time schedules, fares, and service advisories, consult NJ Transit directly.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-8">
+            <h2 class="h3 mb-3">Branch 1: Grove Street Line (City Subway Corridor)</h2>
+            <p>
+              Running approximately <strong>5.3 miles</strong> northwest from downtown Newark Penn Station through Branch Brook Park and Belleville into Bloomfield, this segment follows the historic #7 City Subway alignment—underground beneath Raymond Boulevard from Newark Penn to Washington Street, then emerging into the landscaped former Morris Canal cut and continuing onto surface right-of-way to Grove Street.
+            </p>
+
+            <h2 class="h3 mt-4 mb-3">Branch 2: Broad Street Line</h2>
+            <p>
+              Covering roughly <strong>1.0 mile</strong> through downtown Newark, the Broad Street Extension connects Newark Penn Station to Newark Broad Street Station along street-level trackage, featuring a split one-way couplet serving Atlantic Street &amp; Riverfront Stadium outbound and Harriet Tubman Square (formerly Washington Park) inbound.
+            </p>
+
+            <h2 class="h3 mt-4 mb-3">Complete Station Directory (17 Stations)</h2>
+            <div class="table-wrap">
+              <table class="table table-hover table-nlr mb-0">
+                <thead>
+                  <tr>
+                    <th>Station</th>
+                    <th>Branch</th>
+                    <th>Alignment / Context</th>
+                    <th>Key Transfers &amp; Landmarks</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>Newark Penn Station</strong></td>
+                    <td>Both Branches</td>
+                    <td>Underground terminal</td>
+                    <td>Amtrak, NJ Transit Rail, PATH, Regional Buses</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Military Park</strong></td>
+                    <td>Grove St</td>
+                    <td>Underground (Raymond Blvd)</td>
+                    <td>Military Park, downtown business district</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Washington Street</strong></td>
+                    <td>Grove St</td>
+                    <td>Underground portal</td>
+                    <td>Rutgers–Newark, Essex County College, Newark Museum</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Warren Street / NJIT</strong></td>
+                    <td>Grove St</td>
+                    <td>Open canal cut</td>
+                    <td>NJIT Campus, University Heights</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Norfolk Street</strong></td>
+                    <td>Grove St</td>
+                    <td>Open canal cut</td>
+                    <td>Historic Route #23 Central Ave ramp site</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Orange Street</strong></td>
+                    <td>Grove St</td>
+                    <td>Open cut / surface crossing</td>
+                    <td>Orange Street bus connections</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Park Avenue</strong></td>
+                    <td>Grove St</td>
+                    <td>Open cut along park</td>
+                    <td>Branch Brook Park southern access</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Bloomfield Avenue</strong></td>
+                    <td>Grove St</td>
+                    <td>Open cut / portal</td>
+                    <td>Bloomfield Ave commercial corridor</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Davenport Avenue</strong></td>
+                    <td>Grove St</td>
+                    <td>Open cut / at-grade crossing</td>
+                    <td>Upper Roseville neighborhood, Branch Brook Park edge</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Branch Brook Park</strong></td>
+                    <td>Grove St</td>
+                    <td>Open cut / park hub</td>
+                    <td>Branch Brook Park; replaces former Heller Pkwy &amp; Franklin Ave stops</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Silver Lake</strong></td>
+                    <td>Grove St</td>
+                    <td>Surface (Belleville)</td>
+                    <td>Silver Lake neighborhood (2002 extension)</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Grove Street</strong></td>
+                    <td>Grove St</td>
+                    <td>Surface terminal (Bloomfield)</td>
+                    <td>Grove St Maintenance Facility &amp; Bloomfield transit</td>
+                  </tr>
+                  <tr>
+                    <td><strong>NJPAC / Center Street</strong></td>
+                    <td>Broad St</td>
+                    <td>Surface street-running</td>
+                    <td>NJ Performing Arts Center, Mulberry Commons</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Atlantic Street</strong></td>
+                    <td>Broad St (Outbound)</td>
+                    <td>Surface couplet</td>
+                    <td>Northbound toward Broad Street Station</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Riverfront Stadium</strong></td>
+                    <td>Broad St (Outbound)</td>
+                    <td>Surface couplet</td>
+                    <td>Northbound toward Broad Street Station</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Harriet Tubman Square</strong> (formerly Washington Park)</td>
+                    <td>Broad St (Inbound)</td>
+                    <td>Surface couplet</td>
+                    <td>Southbound return to Newark Penn; Newark Public Library</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Newark Broad Street</strong></td>
+                    <td>Broad St</td>
+                    <td>Surface terminal</td>
+                    <td>NJ Transit Morris &amp; Essex / Montclair-Boonton Lines</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="font-monospace small text-muted">
+              Note: 17 stations total (12 along the Grove Street corridor including shared Newark Penn Station, plus 5 dedicated Broad Street Extension stops where Atlantic Street, Riverfront Stadium, and Harriet Tubman Square serve directional couplet movements).
+            </p>
+
+            <h2 class="h3 mt-4 mb-3">Fleet, Fares &amp; Accessibility</h2>
+            <p>
+              All 17 modern stations feature low-floor platforms providing step-free ADA boarding onto the 21 articulated Kinki Sharyo vehicles. Ticket vending machines and validators operate on a proof-of-payment system across platforms prior to boarding.
+            </p>
+          </div>
+
+          <div class="col-lg-4">
+            <aside>
+              <figure class="archive-figure">
+                <img class="img-fluid" src="assets/media/archival/nlr-system-map.png" alt="Diagram map of the Newark Light Rail two-branch system">
+                <figcaption>
+                  System map illustrating the Grove Street branch (former City Subway) and the Broad Street Extension meeting at Newark Penn Station.
+                  <span class="archive-credit">Map: User:Darkcore · CC BY-SA 3.0</span>
+                </figcaption>
+              </figure>
+
+              <div class="card card-nlr card-nlr-brick">
+                <div class="card-body">
+                  <p class="card-meta">Important Disclaimer</p>
+                  <h3 class="h5">Archival Reference Only</h3>
+                  <p class="small mb-3">
+                    NLR History is an independent educational website. Always verify current schedules, single-ride fares, and service alerts on NJ Transit's official website before traveling.
+                  </p>
+                  <a class="btn btn-secondary btn-sm" href="contact.html">Report a Correction</a>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-5">
+          <p class="footer-title">NLR History — The Line That Outlasted Time</p>
+          <p>
+            An independent educational archive documenting the Morris Canal, the #7 Newark City Subway, PCC streetcar operations, modern Newark Light Rail extensions, and proposed regional connections.
+          </p>
+        </div>
+        <div class="col-6 col-lg-3 offset-lg-1">
+          <p class="footer-heading">Historical Chapters</p>
+          <ul class="footer-links">
+            <li><a href="history.html">History Overview</a></li>
+            <li><a href="era-1-canal.html">Era 1: Morris Canal</a></li>
+            <li><a href="era-2-trolleys.html">Era 2: Trolleys &amp; #7 Subway</a></li>
+            <li><a href="era-3-pcc-cars.html">Era 3: PCC Cars</a></li>
+            <li><a href="era-4-modern-light-rail.html">Era 4: Modern Light Rail</a></li>
+            <li><a href="future.html">The Future</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-3">
+          <p class="footer-heading">System &amp; Community</p>
+          <ul class="footer-links">
+            <li><a href="about.html">About the System</a></li>
+            <li><a href="contact.html">Contact &amp; Photo Submissions</a></li>
+            <li><a href="advocate.html">Advocate for Transit Expansion</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+            <li><a href="privacy.html">Privacy Statement</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; 2026 NLR History. All rights reserved. Not affiliated with NJ Transit.</div>
+        <div>
+          <a class="me-3" href="terms.html">Terms of Service</a>
+          <a class="me-3" href="privacy.html">Privacy Statement</a>
+          <span>Project by Aidan Heaney (<a href="mailto:adh34@njit.edu">adh34@njit.edu</a>)</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
